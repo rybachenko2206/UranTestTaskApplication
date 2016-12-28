@@ -19,6 +19,8 @@
 		422ECB2F1E13CCE20094C008 /* MDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB2D1E13CCE20094C008 /* MDUtils.m */; };
 		422ECB321E13CD390094C008 /* FileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB311E13CD390094C008 /* FileTableViewController.m */; };
 		422ECB3B1E13D57C0094C008 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB3A1E13D57C0094C008 /* Utils.m */; };
+		422ECB3F1E13EFE90094C008 /* FileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB3E1E13EFE90094C008 /* FileTableViewCell.m */; };
+		60FE0D75A8978CE001AF9546 /* Pods_UranTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE88B2D26FCCA9FF96804A /* Pods_UranTestTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20AE88B2D26FCCA9FF96804A /* Pods_UranTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UranTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		422ECAE41E13C8110094C008 /* UranTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UranTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		422ECAE81E13C8110094C008 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		422ECAF11E13C8110094C008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +70,10 @@
 		422ECB371E13D1620094C008 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		422ECB391E13D57C0094C008 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Helpers/Utils.h; sourceTree = "<group>"; };
 		422ECB3A1E13D57C0094C008 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Helpers/Utils.m; sourceTree = "<group>"; };
+		422ECB3D1E13EFE90094C008 /* FileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileTableViewCell.h; sourceTree = "<group>"; };
+		422ECB3E1E13EFE90094C008 /* FileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileTableViewCell.m; sourceTree = "<group>"; };
+		53686098CB1E3419C371F302 /* Pods-UranTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UranTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UranTestTask/Pods-UranTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		C56DD2C1F09378113247B4D6 /* Pods-UranTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UranTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-UranTestTask/Pods-UranTestTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60FE0D75A8978CE001AF9546 /* Pods_UranTestTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +110,7 @@
 				422ECB0B1E13C8110094C008 /* UranTestTaskUITests */,
 				422ECAE51E13C8110094C008 /* Products */,
 				422ECB331E13D0160094C008 /* Frameworks */,
+				EA64C287A5CADD91AAD71DA5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +206,7 @@
 		422ECB201E13C8C20094C008 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				422ECB3C1E13EFC00094C008 /* TableViewCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				422ECB341E13D0170094C008 /* CoreFoundation.framework */,
+				20AE88B2D26FCCA9FF96804A /* Pods_UranTestTask.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -248,6 +259,24 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		422ECB3C1E13EFC00094C008 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				422ECB3D1E13EFE90094C008 /* FileTableViewCell.h */,
+				422ECB3E1E13EFE90094C008 /* FileTableViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		EA64C287A5CADD91AAD71DA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53686098CB1E3419C371F302 /* Pods-UranTestTask.debug.xcconfig */,
+				C56DD2C1F09378113247B4D6 /* Pods-UranTestTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 422ECB111E13C8110094C008 /* Build configuration list for PBXNativeTarget "UranTestTask" */;
 			buildPhases = (
+				9C23D9E5A22BE26454762658 /* [CP] Check Pods Manifest.lock */,
 				422ECAE01E13C8110094C008 /* Sources */,
 				422ECAE11E13C8110094C008 /* Frameworks */,
 				422ECAE21E13C8110094C008 /* Resources */,
+				75A552F08B0CDF1278118E12 /* [CP] Embed Pods Frameworks */,
+				C711BF51F589147B401EF0A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -379,12 +411,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75A552F08B0CDF1278118E12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UranTestTask/Pods-UranTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C23D9E5A22BE26454762658 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C711BF51F589147B401EF0A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UranTestTask/Pods-UranTestTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		422ECAE01E13C8110094C008 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				422ECB2F1E13CCE20094C008 /* MDUtils.m in Sources */,
+				422ECB3F1E13EFE90094C008 /* FileTableViewCell.m in Sources */,
 				422ECB251E13C90D0094C008 /* FileModel.m in Sources */,
 				422ECB2E1E13CCE20094C008 /* MDDebugObject.m in Sources */,
 				422ECB321E13CD390094C008 /* FileTableViewController.m in Sources */,
@@ -537,6 +618,7 @@
 		};
 		422ECB121E13C8110094C008 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53686098CB1E3419C371F302 /* Pods-UranTestTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UHJFHS6M7R;
@@ -551,6 +633,7 @@
 		};
 		422ECB131E13C8110094C008 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56DD2C1F09378113247B4D6 /* Pods-UranTestTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UHJFHS6M7R;
@@ -632,6 +715,7 @@
 				422ECB131E13C8110094C008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		422ECB141E13C8110094C008 /* Build configuration list for PBXNativeTarget "UranTestTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +724,7 @@
 				422ECB161E13C8110094C008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		422ECB171E13C8110094C008 /* Build configuration list for PBXNativeTarget "UranTestTaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +733,7 @@
 				422ECB191E13C8110094C008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

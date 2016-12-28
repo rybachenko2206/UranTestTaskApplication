@@ -1,0 +1,6 @@
+framework module Pods_UranTestTask {
+  umbrella header "Pods-UranTestTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
