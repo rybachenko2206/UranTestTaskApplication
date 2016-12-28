@@ -20,6 +20,7 @@
 		422ECB321E13CD390094C008 /* FileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB311E13CD390094C008 /* FileTableViewController.m */; };
 		422ECB3B1E13D57C0094C008 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB3A1E13D57C0094C008 /* Utils.m */; };
 		422ECB3F1E13EFE90094C008 /* FileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB3E1E13EFE90094C008 /* FileTableViewCell.m */; };
+		422ECB421E13FA900094C008 /* SharedDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 422ECB411E13FA900094C008 /* SharedDateFormatter.m */; };
 		60FE0D75A8978CE001AF9546 /* Pods_UranTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AE88B2D26FCCA9FF96804A /* Pods_UranTestTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		422ECB3A1E13D57C0094C008 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Helpers/Utils.m; sourceTree = "<group>"; };
 		422ECB3D1E13EFE90094C008 /* FileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileTableViewCell.h; sourceTree = "<group>"; };
 		422ECB3E1E13EFE90094C008 /* FileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileTableViewCell.m; sourceTree = "<group>"; };
+		422ECB401E13FA900094C008 /* SharedDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDateFormatter.h; sourceTree = "<group>"; };
+		422ECB411E13FA900094C008 /* SharedDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDateFormatter.m; sourceTree = "<group>"; };
 		53686098CB1E3419C371F302 /* Pods-UranTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UranTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UranTestTask/Pods-UranTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 		C56DD2C1F09378113247B4D6 /* Pods-UranTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UranTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-UranTestTask/Pods-UranTestTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +200,8 @@
 		422ECB1F1E13C8C20094C008 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				422ECB401E13FA900094C008 /* SharedDateFormatter.h */,
+				422ECB411E13FA900094C008 /* SharedDateFormatter.m */,
 				422ECB231E13C90D0094C008 /* FileModel.h */,
 				422ECB241E13C90D0094C008 /* FileModel.m */,
 			);
@@ -469,6 +474,7 @@
 				422ECB251E13C90D0094C008 /* FileModel.m in Sources */,
 				422ECB2E1E13CCE20094C008 /* MDDebugObject.m in Sources */,
 				422ECB321E13CD390094C008 /* FileTableViewController.m in Sources */,
+				422ECB421E13FA900094C008 /* SharedDateFormatter.m in Sources */,
 				422ECB211E13C8C20094C008 /* AppDelegate.m in Sources */,
 				422ECB3B1E13D57C0094C008 /* Utils.m in Sources */,
 				422ECAE91E13C8110094C008 /* main.m in Sources */,

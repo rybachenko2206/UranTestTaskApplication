@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWTableViewCell.h"
+@class FileModel;
 
-@interface FileTableViewCell : UITableViewCell
+@interface FileTableViewCell : SWTableViewCell
+
+@property (nonatomic, strong) FileModel *file;
+
++ (NSString *)cellIdentifier;
 
 @end

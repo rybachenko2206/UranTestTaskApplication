@@ -13,8 +13,8 @@
 
 #import "FileModel.h"
 
-static NSInteger const minElementsInFolder = 7;
-static NSInteger const maxElementsInFolder = 12;
+static NSInteger const minElementsInFolder = 10;
+static NSInteger const maxElementsInFolder = 20;
 
 static NSUInteger callTestModelsListCounter = 0;
 static NSUInteger callTestModelsListCounterMax = 10;
@@ -36,11 +36,11 @@ static NSUInteger callTestModelsListCounterMax = 10;
 
 #pragma mark - Interface methods
 
-- (UIColor *)color {
+- (UIColor *)colorForIndicatorType {
     UIColor *indColor = nil;
     switch (self.indicatorColorType) {
-        case IndicatorColorGray:
-            indColor = RGB(160, 160, 160);
+        case IndicatorColorNone:
+            indColor = [UIColor clearColor];
             break;
         case IndicatorColorRed:
             indColor = RGB(255, 102, 95);
@@ -65,6 +65,37 @@ static NSUInteger callTestModelsListCounterMax = 10;
     return indColor;
 }
 
+- (UIImage *)iconForFileType {
+    NSString *iconName = @"";
+    switch (self.type) {
+        case FileTypeFolder:
+            iconName = @"folder";
+            break;
+        case FileTypeTxt:
+            iconName = @"txtFile";
+            break;
+        case FileTypePDF:
+            iconName = @"pdfFile";
+            break;
+        case FileTypeImage:
+            iconName = @"imageFile";
+            break;
+        case FileTypeAudio:
+            iconName = @"audioFile";
+            break;
+        case FileTypeVideo:
+            iconName = @"videoFile";
+            break;
+            
+        default:
+            break;
+    }
+    
+    UIImage *icon = [UIImage imageNamed:iconName];
+    return icon;
+}
+
+
 #pragma mark - Static methods
 
 + (NSArray *)testModelsList {
@@ -78,7 +109,7 @@ static NSUInteger callTestModelsListCounterMax = 10;
             callTestModelsListCounter >= callTestModelsListCounterMax) {
             newType = FileTypeTxt;
         }
-        IndicatorColor newColor = [Utils getRandomNumberBetween:IndicatorColorGray to:IndicatorColorBlue];
+        IndicatorColor newColor = [Utils getRandomNumberBetween:IndicatorColorNone to:IndicatorColorBlue];
         FileModel *newModel = [[FileModel alloc] initWithType:newType indicatorColor:newColor];
         newModel.name = [FileModel generateFileNameForType:newType];
         if (newType == FileTypeFolder) {

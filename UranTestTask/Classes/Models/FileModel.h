@@ -9,7 +9,7 @@
 
 
 typedef NS_ENUM(NSUInteger, IndicatorColor) {
-    IndicatorColorGray = 0,
+    IndicatorColorNone = 0,
     IndicatorColorRed,
     IndicatorColorOrange,
     IndicatorColorYellow,
@@ -35,5 +35,7 @@ typedef NS_ENUM(NSUInteger, FileType) {
 @property (nonatomic, strong) NSArray *files;
 
 + (NSArray *)testModelsList;
+- (UIImage *)iconForFileType;
+- (UIColor *)colorForIndicatorType;
 
 @end
